@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://ptnlesstest.herokuapp.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+	<title>Patternless Site</title>
+	<link href="./Patternless_files/bootstrap.css" rel="stylesheet" media="screen">
+	<script src="./Patternless_files/jquery.js"></script>
+	<script src="./Patternless_files/bootstrap.js"></script>
+</head>
+<body data-gr-c-s-loaded="true">
+	<div class="container">
+		<form action="https://ptnlesstest.herokuapp.com/show_login.php" method="get" accept-charset="utf-8">
+			<h2>Please Sign in</h2>
+			<input type="text" class="input-block-level" name="account" id="account" placeholder="User Name">
+			<input type="password" class="input-block-level" name="password" id="password" placeholder="Password">
+			<input class="btn btn-primary" type="submit">
+            <button class="btn btn-primary" type="submit" id="saveOnSubmit">
+            Save on Submit
+            </button>
+		</form>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('#saveOnSubmit').click(function(e) {
+				e.preventDefault();
+			});			
+
+			$('#account').keypress(function(e) {
+				console.log(e);
+			});
+			document.getElementById('account').addEventListener('keypress', function(e) {
+				console.log(e);
+			});
+		});
+		
+	</script>
+
+
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
